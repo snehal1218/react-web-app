@@ -46,11 +46,11 @@ pipeline
      tar -xvf frontend-${BUILD_NUMBER}.tar
      rm -rf frontend-${BUILD_NUMBER}.tar
      ls -ltr
-     gsutil acl ch -u AllUsers:R gs://vijay-patil
-     gsutil defacl set public-read gs://vijay-patil
-     gsutil web set -m index.html -e index.html gs://vijay-patil
+     gsutil acl ch -u AllUsers:R gs://react-web-app
+     gsutil defacl set public-read gs://react-web-app
+     gsutil web set -m index.html -e index.html gs://react-web-app
      
-     gsutil cp -r * gs://vijay-patil
+     gsutil cp -r * gs://react-web-app
      gsutil setmeta -h "content-type: image/svg+xml" gs://vijay-patil/static/media/*.svg
      
       '''
