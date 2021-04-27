@@ -4,7 +4,7 @@ pipeline
   
  tools
   {
-    node 'node' 
+    nodejs 'node' 
     
   }
 
