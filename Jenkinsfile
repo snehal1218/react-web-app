@@ -48,6 +48,7 @@ pipeline
      ls -ltr
      #gsutil acl ch -u AllUsers:R gs://react-web-app
      #gsutil defacl set public-read gs://react-web-app
+     rm -rf ~/.gsutil
      gsutil web set -m index.html -e index.html gs://react-web-app
      
      gsutil cp -r * gs://react-web-app
