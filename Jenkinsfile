@@ -46,8 +46,8 @@ pipeline
      tar -xvf frontend-${BUILD_NUMBER}.tar
      rm -rf frontend-${BUILD_NUMBER}.tar
      ls -ltr
-     gsutil acl ch -u AllUsers:R gs://react-web-app
-     gsutil defacl set public-read gs://react-web-app
+     #gsutil acl ch -u AllUsers:R gs://react-web-app
+     #gsutil defacl set public-read gs://react-web-app
      gsutil web set -m index.html -e index.html gs://react-web-app
      
      gsutil cp -r * gs://react-web-app
