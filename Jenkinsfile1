@@ -1,5 +1,5 @@
-@Library(value="BV-JenkinsSharedLibrary", changelog=false) _
-    appEnginePipeline {
-        token_file="businessview-token-config.json"
+@Library(value="JenkinsSharedLibrary", changelog=false) _
+    parsing_pipeline {
+        token_file="config.json"
         
 }
