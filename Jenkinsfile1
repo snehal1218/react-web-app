@@ -1,4 +1,4 @@
-@Library(value="JenkinsSharedLibrary", changelog=false) _
+@Library(value="shared-lib", changelog=false) _
     parsing_pipeline {
         token_file="config.json"
         
