@@ -52,7 +52,7 @@ pipeline
      gsutil web set -m index.html -e index.html gs://react-web-app2
      
      gsutil cp -r * gs://react-web-app2
-     gsutil setmeta -h "content-type: image/svg+xml" gs://react-web-app1/static/media/*.svg
+     gsutil setmeta -h "content-type: image/svg+xml" gs://react-web-app2/static/media/*.svg
      
       '''
     } 
